@@ -43,20 +43,17 @@ export const projects = [
       skills: 'React Native',
       img: project04,
       imgBig: project04Big,
-      gitHubLink: 'https://github.com'
    },
    {
       title: 'Landing',
       skills: 'HTML, SCSS, JS',
       img: project05,
       imgBig: project05Big,
-      gitHubLink: 'https://github.com'
    },
    {
       title: 'Gaming community',
       skills: 'React, PHP, MySql',
       img: project06,
       imgBig: project06Big,
-      gitHubLink: 'https://github.com'
    },
 ]
