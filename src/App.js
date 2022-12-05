@@ -2,7 +2,7 @@ import './styles/main.css';
 import {Navbar} from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Project from "./pages/Project";
-import { Route,  Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
@@ -10,6 +10,8 @@ import Contacts from "./pages/Contacts";
 function App() {
    return (
       <div className="App">
+         <BrowserRouter>
+            {/*ScrollToTop()*/}
             <Navbar/>
             <Routes>
                <Route path='/' element={<Home/>}/>
@@ -18,6 +20,7 @@ function App() {
                <Route path='/contacts' element={<Contacts/>}/>
             </Routes>
             <Footer/>
+         </BrowserRouter>
       </div>
    );
 }
